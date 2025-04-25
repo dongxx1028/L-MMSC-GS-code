@@ -1,0 +1,6 @@
+% When m=1,n=0, the code for Equation (46).
+function posimn10=posimn10(rD,RD,z,alpha3,alpha4,omega,lambda)
+posimn10=((1./RD).*cosh(sqrt((z-(alpha3.*RD+alpha4)).*g((z-(alpha3.*RD+alpha4)),omega,lambda)).*RD)).*(((1./(-(rD)^2)).*sinh(sqrt(z.*g(z,omega,lambda)).*rD))...
+         +(1./rD).*sqrt(z.*g(z,omega,lambda)).*cosh(sqrt(z.*g(z,omega,lambda)).*rD))-(((1./(-(rD)^2)).*cosh(sqrt(z.*g(z,omega,lambda)).*rD))+(1/rD)...
+         .*sqrt(z.*g(z,omega,lambda)).*sinh(sqrt(z.*g(z,omega,lambda)).*rD)).*((1/RD).*sinh(sqrt((z-(alpha3.*RD+alpha4)).*g((z-(alpha3.*RD+alpha4)),omega,lambda)).*RD));
+
